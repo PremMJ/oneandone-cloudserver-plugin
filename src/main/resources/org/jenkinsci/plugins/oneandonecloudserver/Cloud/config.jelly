@@ -1,0 +1,36 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+    <f:entry title="Unique name" field="name">
+        <f:textbox/>
+    </f:entry>
+
+    <f:entry title="API token" field="apiToken">
+        <f:password />
+    </f:entry>
+
+    <f:entry title="SSH public key" field="sshKey">
+        <f:textarea />
+    </f:entry>
+
+    <f:entry title="SSH private key" field="privateKey">
+        <f:textarea/>
+    </f:entry>
+
+    <f:entry title="Instance cap" field="instanceCap">
+        <f:textbox default="5"/>
+    </f:entry>
+
+    <f:entry title="Timeout in minutes" field="timeoutMinutes">
+        <f:textbox default="5"/>
+    </f:entry>
+
+    <f:validateButton title="Test connection" progress="Testing API connectivity..." method="testConnection" with="apiToken"/>
+
+    <f:entry title="Servers" description="List of servers which can be launched as slaves">
+        <f:repeatable field="templates">
+            <st:include page="/org/jenkinsci/plugins/oneandonecloudserver/SlaveTemplate/config.jelly" class="org.jenkinsci.plugins.oneandonecloudserver.SlaveTemplate$DescriptorImpl"/>
+        </f:repeatable>
+    </f:entry>
+
+</j:jelly>
