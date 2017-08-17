@@ -75,11 +75,11 @@ The following table lists the server options and their brief descriptions:
 You are welcome to contact us with questions or comments using the **Community** section of the [1&1 Cloud Community](https://www.1and1.com/cloud-community). Please report any feature requests or issues using GitHub issue tracker.
 
 * Ask a question or discuss at [1&1 Cloud Community](https://www.1and1.com/cloud-community).
-* Report an [issue here](https://github.com/StackPointCloud/oneandone-cloudserver-jenkins/issues).
+* Report an [issue here](https://github.com/1and1/oneandone-cloudserver-jenkins/issues).
 
 ## Contributing
 
-1. Fork the repository ([https://github.com/StackPointCloud/oneandone-cloudserver-jenkins/fork](https://github.com/StackPointCloud/oneandone-cloudserver-jenkins/fork))
+1. Fork the repository ([https://github.com/1and1/oneandone-cloudserver-jenkins/fork](https://github.com/1and1/oneandone-cloudserver-jenkins/fork))
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
